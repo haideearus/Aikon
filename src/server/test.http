@@ -1,9 +1,9 @@
 ### Request 1
-POST http://localhost/Aikon/src/server/add_user.php
+POST  http://localhost/Aikon/src/server/Login.php
+
 Content-Type: application/json
 
 {
-  "userName": "another_user7",
-  "userEmail": "test_email1",
-  "password": "abwteyejhbhjgwejr"
+  "userEmail": "testlog@gmail.com",
+  "password": "andreea"
 }

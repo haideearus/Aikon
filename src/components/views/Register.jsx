@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Form from "../../utilities/Forms";
+import axios from 'axios';
+
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -41,17 +43,35 @@ const Register = () => {
 
   const register = (e) => {
     e.preventDefault();
-
-    const validate = validateRegister();
-
-    if (validate) {
+  
+    const isValid = validateRegister();
+  
+    if (isValid) {
       setValidate({});
       setName("");
       setEmail("");
       setPassword("");
-      alert("Successfully Register User");
+  
+      // Create a payload object with the user data
+      const payload = {
+        userName: name,
+        userEmail: email,
+        password: password,
+      };
+  
+      // Make a POST request using Axios
+      axios.post(' http://localhost/Aikon/src/server/Register.php', payload)
+        .then((response) => {
+          // Handle the response if the request is successful
+          alert("Successfully Register User");
+        })
+        .catch((error) => {
+          // Handle any errors that occur during the request
+          console.error(error);
+        });
     }
   };
+  
 
   const togglePassword = (e) => {
     if (showPassword) {

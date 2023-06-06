@@ -1,0 +1,18 @@
+{
+    "name": "rapha/php-jwt",
+    "type": "library",
+    "require": {
+        "firebase/php-jwt": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Firebase\\PhpJwt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "raphaelaugustinov",
+            "email": "raphaelaugustinov@gmail.com"
+        }
+    ]
+}

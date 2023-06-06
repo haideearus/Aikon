@@ -1,9 +1,0 @@
-### Request 1
-POST  http://localhost/Aikon/src/server/Login.php
-
-Content-Type: application/json
-
-{
-  "userEmail": "testlog@gmail.com",
-  "password": "andreea"
-}

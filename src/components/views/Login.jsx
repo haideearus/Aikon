@@ -47,15 +47,16 @@ const Login = () => {
       setEmail("");
       setPassword("");
 
+      const payload = {
+        userEmail: email,
+        password: password,
+      };
+
       try {
         const response = await axios.post(
-          "http://localhost/Aikon/src/server/Login.php",
-          {
-            email: email,
-            password: password,
-          }
-        );
+          "http://localhost/Aikon/src/server/TestLogin.php", payload);
         console.log(response.data);
+        alert("User valid");
       } catch (error) {
         console.error(error);
       }

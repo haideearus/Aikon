@@ -1,0 +1,18 @@
+### Request 1
+POST  http://localhost/Aikon/server/Register.php
+Content-Type: application/json
+
+{
+  "userName": "rapha3",
+  "password": "rapha3",
+  "userEmail": "rapha3@gmail.com"
+}
+
+###
+POST  http://localhost/Aikon/server/TestLogin.php
+Content-Type: application/json
+
+{
+  "userEmail": "rapha3@gmail.com",
+  "password": "rapha3"
+}

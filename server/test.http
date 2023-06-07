@@ -3,9 +3,9 @@ POST  http://localhost/Aikon/server/Register.php
 Content-Type: application/json
 
 {
-  "userName": "rapha3",
-  "password": "rapha3",
-  "userEmail": "rapha3@gmail.com"
+  "userName": "test11",
+  "password": "test11",
+  "userEmail": "test11@gmail.com"
 }
 
 ###

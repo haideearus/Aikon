@@ -54,9 +54,8 @@ const Login = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost/Aikon/src/server/TestLogin.php", payload);
+          "http://localhost/Aikon/server/TestLogin.php", payload);
         console.log(response.data);
-        alert("User valid");
       } catch (error) {
         console.error(error);
       }

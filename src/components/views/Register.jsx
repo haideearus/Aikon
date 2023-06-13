@@ -60,7 +60,7 @@ const Register = () => {
       };
   
       // Make a POST request using Axios
-      axios.post(' http://localhost/Aikon/src/server/Register.php', payload)
+      axios.post(' http://localhost/Aikon/server/Register.php', payload)
         .then((response) => {
           // Handle the response if the request is successful
           alert("Successfully Register User");
